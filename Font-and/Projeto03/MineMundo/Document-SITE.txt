@@ -1,0 +1,386 @@
+Paleta de cores
+
+1 - No desenvolvimento do projeto deve ser utilizada a seguinte paleta:
+
+#3c184e
+#fff
+
+2 - Alguns elementos da página terão um sombreado utilizando a paleta de cores a seguir:
+
+#1f26875e
+
+#0000005c
+
+Esta cor será utilizada como sombreamento das imagens da seção de serviços. Será uma cor preta com uma leve transparência
+
+
+3 - Por fim, temos a cor #ffffffc4 que será usada para criar um efeito de transparência no container da seção banner
+
+Conhecendo a tipografia do layout
+
+Veja abaixo as informações sobre a tipografia (fonte, tamanho, itálico etc.) do layout:
+
+1- O projeto deve utilizar como padrão a fonte sans-serif para os textos do site
+
+2- Os links não devem estar sublinhados
+
+3- Alguns textos terão um destaque visual conforme abaixo:
+
+Estilo da fonte itálico;
+O peso da fonte 700;
+
+Conhecendo as especificações e dimensões do layout
+
+1 - A seção banner
+
+Deve ocupar 100% da largura da tela;
+
+Deve ter um espaçamento interno de 120px (superior e inferior) e 80px (nas laterais);
+
+Terá uma imagem de fundo e seu posicionamento terá o valor "center";
+
+Para que a imagem ocupe todo o espaço do elemento utilize o valor "cover";
+
+
+1- O primeiro container da seção banner terá as seguintes especificações e a mesma aparência:
+Largura máxima de 250px;
+Cor do texto #3c184e.
+
+O conteúdo do primeiro container será composto por dois parágrafos
+
+O primeiro parágrafo terá:
+
+Tamanho da fonte 35px;
+Margem inferior de 5px;
+Margem superior e laterais zeradas.
+
+Junto com o texto do primeiro parágrafo teremos uma imagem (Figura 12), que terá as seguintes especificações:
+
+Largura de 30px;
+Margem lateral direita de 5px.
+
+O segundo parágrafo terá as especificações abaixo:
+
+Tamanho da fonte 14px;
+Texto centralizado;
+Margens zeradas.
+
+
+2- O segundo container terá as especificações abaixo:
+
+Uma largura máxima 1024px;
+
+Bordas arredondadas com 10px;
+
+Espaçamento interno em todos os lados de 40px;
+
+Margem superior de 70px;
+
+Margens laterais com valor "auto"
+Margem inferior zerada;
+
+Cor de fundo #ffffffc4;
+
+Uma sombra:
+
+Deslocamento X de 0;
+Deslocamento Y de 8px;
+Desfoque de 32px;
+Cor #1f26875e.
+
+
+O conteúdo do segundo container será composto por um título e um parágrafo
+
+
+A seguir temos as especificações do Título:
+
+Tamanho da fonte 60px;
+Cor #3c184e;
+Texto centralizado;
+Peso da fonte 800;
+Margem superior e laterais zeradas
+Margem inferior 40px;
+
+O último elemento deste container é um parágrafo
+
+Vejamos as especificações deste elemento:
+
+Largura 200px
+Espaçamento interno 10px (superior e inferior);
+Espaçamento interno 25px nas laterais;
+Margens superior e inferior zeradas
+Margens laterais com valor "auto";
+Arredondamento das bordas 10px;
+Cor de fundo #3c184e;
+Tamanho da fonte 20px;
+Texto centralizado.
+
+O link contido no parágrafo terá um texto "Fale conosco" e uma imagem. Veja a lista das especificações abaixo:
+
+O link não terá o sublinhado padrão;
+A cor será #ffff;
+A imagem terá uma largura de 20px.
+
+Como criar o link do WhatsApp?
+
+https://faq.whatsapp.com/5913398998672934/?cms_id=5913398998672934&draft=false%3B
+
+https://wa.me/<5521999999999>
+<a href="https://wa.me/<5521999999999>" target='_blank> fale comigo </a>
+
+
+2 - A seção Serviços
+
+Deve ocupar 100% da largura da tela;
+Deve ter um espaçamento interno de 120px (superior e inferior) e 80px (nas laterais).
+
+
+O conteúdo da seção serviços será dividido conforme a lista abaixo e apresentado na Figura 17:
+
+Um subtítulo (<h3>);
+Um container para a lista;
+Um container para as imagens;
+
+Vejamos as especificações de cada elemento:
+
+1- Subtítulo (<h3>):
+
+Tamanho da fonte 36px;
+Cor do texto #3c184e;
+Texto centralizado;
+Margem superior e laterais zeradas;
+Margem inferior 45px.
+
+2- Container da lista:
+
+Largura máxima 800px;
+Margem superior zerada;
+Margens laterais com valor "auto";
+Margem inferior 50px.
+Cor dos textos #3c184e.
+
+A lista terá as seguintes especificações:
+
+Deve ser uma lista não ordenada;
+O marcador da lista deve ser um quadrado.
+
+Os itens da lista terão as seguintes especificações:
+
+Tamanho da fonte 20px;
+Margem inferior 20px;
+Margem superior e laterais zeradas.
+
+Uma parte do texto terá um destaque com as especificações abaixo:
+
+Peso da fonte 700;
+Estilo itálico;
+
+
+3- Container das imagens:
+
+Largura máxima 800px;
+Margem superior e inferior zeradas;
+Margens laterais com valor "auto";
+Conteúdo centralizado.
+
+As imagens terão as especificações abaixo:
+
+Bordas arredondadas em 5px
+Uma sombra:
+Deslocamento X de 3px
+Deslocamento Y de 6px;
+Desfoque de 10px;
+Expansão de 6px;
+Cor #0000005c.
+
+
+FAIXAS
+
+Na página teremos duas faixas com textos diferentes, porém com as mesmas especificações,
+
+
+Cada faixa será composta por:
+
+Um container:
+Espaçamento interno de 120px (superior e inferior) e 80px (nas laterais);
+Cor de fundo #3c184e;
+Conteúdo centralizado;
+
+O conteúdo será composto por um parágrafo e um container.
+
+O parágrafo terá:
+
+Largura máxima de 800px;
+Margem superior zerada;
+Margem inferior 50px;
+Margens laterais com valor "auto";
+Tamanho da fonte 40px;
+Cor da fonte #fff;
+Texto centralizado.
+
+Uma parte do texto deverá ter um destaque
+
+
+O destaque terá:
+
+Peso da fonte 700;
+Estilo itálico.
+
+O container terá o conteúdo centralizado
+
+O conteúdo do container serão os links das redes sociais. Cada link terá um ícone da rede social:
+
+Os Links (Figura 28):
+Não devem estar sublinhados;
+Margens laterais com valor 20px.
+
+Os ícones das redes sociais terão largura e altura de 50px.
+
+
+4 - Seção Marcas:
+
+Deve ocupar 100% da largura da tela;
+Deve ter um espaçamento interno de 120px (superior e inferior) e 80px (nas laterais).
+
+O conteúdo da seção marcas será dividido:
+
+Um subtítulo (h3);
+Três containers.
+
+Subtítulo (h3):
+Tamanho da fonte 36px;
+Cor do texto #3c184e;
+Texto centralizado;
+Margem superior e laterais zeradas;
+Margem inferior 45px;
+
+Containers:
+Largura máxima 800px;
+Margem superior e inferior zeradas;
+Margens laterais com valor "auto";
+
+Imagens:
+Em cada container teremos quatro imagens com as especificações abaixo:
+
+Largura e altura 148px;
+Margem superior e inferior zeradas;
+Margens laterais 15px.
+
+
+5 - Seção onde estamos:
+
+Deve ocupar 100% da largura da tela;
+Deve ter um espaçamento interno de 120px (superior e inferior) e 80px (nas laterais);
+O conteúdo deve estar centralizado.
+
+
+No conteúdo desta seção temos:
+
+Um subtítulo (h3);
+Um parágrafo;
+Um mapa com a localização do Pet Shop.
+
+
+Subtítulo (h3):
+Tamanho da fonte 36px;
+Cor do texto #3c184e;
+Texto centralizado;
+Margem superior e laterais zeradas;
+Margem inferior 45px.
+
+
+Parágrafo:
+
+Tamanho da fonte 20px;
+Cor do texto #3c184e;
+Texto centralizado;
+Margem inferior 45px;
+Margem superior e laterais zeradas
+
+Mapa:
+
+Largura 800px;
+Altura 450px.
+
+
+6 - Rodapé
+
+Deve ocupar 100% da largura da tela;
+Deve ter um espaçamento interno de 10px (superior e inferior)
+Não deve ter espaçamento interno nas laterais;
+Cor de fundo #3c184e.
+
+
+O conteúdo do rodapé é um parágrafo com o nome do desenvolvedor. Veja as especificações abaixo e na Figura 40:
+
+Cor da fonte #fff;
+Tamanho da fonte 12px;
+Texto centralizado
+
+
+
+Checklist
+Para garantir que seu Passo 3 está completo, verifique os itens abaixo:
+
+Certifique-se de compreender todas as especificações do layout para a realização do projeto;
+A fonte utilizada neste projeto não precisa ser importada, pois se trata de uma fonte padrão na maioria dos navegadores;
+Fique atento às especificações dos elementos, em alguns casos as especificações são iguais. Por exemplo: os subtítulos <h3> e o espaçamento interno das seções.
+
+
+
+dicas Sites de paleta de cores (por exemplo: no site https://rgbacolorpicker.com/color-wheel-picker)
+
+
+RESET CSS
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

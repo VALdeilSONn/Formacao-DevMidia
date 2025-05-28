@@ -1,0 +1,40 @@
+div{
+    background-color: beige;
+    align-content: center;
+    width: 1000px;
+    font-family: Verdana, sans-serif;
+}
+
+h1{
+    font-size: 22px;
+    text-align: center;
+}
+
+h2{
+    font-size: 18px;
+    color: #88100f;
+    font-weight: normal;
+    text-align: center;
+}
+
+img{
+    width: 700px;
+    height: 300px;
+}
+
+h3{
+    font-size: 16px;
+    color: #88100f;
+    text-decoration: underline;
+}
+
+a{
+    background: rgb(233, 226, 203);
+    color: blue;
+    text-decoration: none;
+}
+
+p, ul, ol{
+    font-size: 14px;
+    line-height: 28px;
+}

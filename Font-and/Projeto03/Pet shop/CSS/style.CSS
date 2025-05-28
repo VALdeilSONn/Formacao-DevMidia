@@ -1,0 +1,213 @@
+/**  RESET CSS  **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.topo {
+    width: 100%;
+    padding: 120px 80px;
+    color: #3c184e;
+    background: url(../imagem/banner-topo.jpg) center;
+    background-size: cover;
+}
+
+.logo {
+    max-width: 250px;
+    color: #3c184e;
+}
+
+.primeiro {
+    font-size: 35px;
+    padding: 0 0 5px 0;
+}
+
+.primeiro img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.segundo {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+}
+
+.banner {
+    max-width: 1024px;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 70px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ffffffc4;
+    box-shadow: 0 8px 32px #1f26875e;
+}
+
+.banner h1 {
+    font-size: 60px;
+    color: #3c184e;
+    text-align: center;
+    font-weight: 800;
+    margin: 0 0 40px 0;
+}
+
+.banner p {
+    width: 200px;
+    padding: 10px 25px;
+    margin: 0 auto;
+    font-size: 20px;
+    background-color: #3c184e;
+    text-align: center;
+}
+
+.banner a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.banner img {
+    width: 20px;
+}
+
+.servico {
+    width: 100%;
+    padding: 120px 80px;
+}
+
+.servico h3 {
+    font-size: 36px;
+    color: #3c184e;
+    text-align: center;
+    margin: 0 0 45px 0;
+}
+
+.servico ul {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    color: #3c184e;
+    list-style: square;
+}
+
+.servico li {
+    font-size: 20px;
+    padding: 0 0 20px 0;
+}
+
+.servico span {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.imagem1 {
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.imagem1 img {
+    border-radius: 5px;
+    box-shadow: 3px 6px 10px 6px #0000005c;
+}
+
+.faixas {
+    padding: 120px 80px;
+    background-color: #3c184e;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.faixas p {
+    max-width: 800px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+}
+
+.faixas span {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.faixas img {
+    height: 50px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.marcas {
+    width: 100%;
+    padding: 120px 80px;
+}
+
+.marcas h3 {
+    font-size: 36px;
+    color: #3c184e;
+    margin: 0 0 45px 0;
+}
+
+.marcas div {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.marcas div img {
+    width: 148px;
+    height: 148px;
+    margin: 0 15px;
+}
+
+.mapa {
+    width: 100%;
+    padding: 120px 80px;
+    text-align: center;
+}
+
+.mapa h3 {
+    font-size: 36px;
+    color: #3c184e;
+    margin: 0 0 45px 0;
+}
+
+.mapa p {
+    font-size: 20px;
+    color: #3c184e;
+    margin: 0 0 45px 0;
+}
+
+.mapa iframe {
+    width: 800px;
+    height: 450px;
+    box-shadow: 0 8px 32px #1f26875e;
+}
+
+.rodape {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #3c184e;
+}
+
+.rodape p {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.rodape p a {
+    margin: 60px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #a72ae685;
+}
