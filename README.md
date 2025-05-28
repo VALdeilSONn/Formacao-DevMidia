@@ -23,5 +23,6 @@ Meu objetivo é me tornar um desenvolvedor Full-Stack altamente qualificado, cri
 ## 📬 Contato
 
 🔹 [LinkedIn](www.linkedin.com/in/valdeilson-souza-de-carvalho-8871b5245)  
-🔹 [Portfólio]([https://seu-portfolio.com](https://portifolio-aula-resilia-01.vercel.app/))  
-🔹 [GitHub](https://github.com/VALdeilSONn)  
+🔹 [Portfólio](https://portifolio-aula-resilia-01.vercel.app/)  
+🔹 [GitHub](https://github.com/VALdeilSONn) 
+🔹 [WhatsApp](https://wa.me/5521964117089) 
