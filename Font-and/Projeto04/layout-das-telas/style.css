@@ -1,0 +1,525 @@
+/* Importar fontes */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* Variáveis de Cores (para facilitar a manutenção) */
+:root {
+    --cor-primaria: #7A4E3A; /* Tom de marrom do logo e detalhes */
+    --cor-secundaria: #331A00; /* Marrom escuro/preto para fundo */
+    --cor-texto-claro: #F8F8F8;
+    --cor-texto-escuro: #4A2B1A;
+    --cor-destaque: #E0C18F; /* Bege/dourado para títulos e destaques */
+    --cor-divisor: #A8A8A8; /* Cinza para divisores */
+    --cor-fundo-transparente: rgba(0, 0, 0, 0.5); /* Para sobreposições */
+    --cor-fundo-overlay: rgba(0, 0, 0, 0.6); /* Overlay um pouco mais escuro */
+}
+
+/* Reset básico e estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--cor-texto-escuro);
+    background-color: #F8F8F8; /* Um branco levemente off-white */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* -------------------- TOPO -------------------- */
+.topo {
+    background-color: var(--cor-secundaria);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.topo .logo {
+    height: 50px; /* Ajuste conforme o tamanho real do seu logo */
+}
+
+.topo .menu a {
+    color: var(--cor-texto-claro);
+    margin-left: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    font-size: 1.1em;
+}
+
+.topo .menu a:hover {
+    color: var(--cor-destaque);
+}
+
+/* -------------------- HERO SECTION -------------------- */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Ajuste a altura conforme a preferência */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px; /* Espaço para o topo fixo */
+}
+
+.hero .img-capa {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    filter: brightness(0.6); /* Escurece a imagem para o texto se destacar */
+}
+
+.hero .titulo-hero {
+    position: relative;
+    z-index: 2;
+    color: var(--cor-texto-claro);
+    padding: 20px;
+    /* Adicionar um fundo semi-transparente ou sombra para o texto se destacar mais */
+    background-color: var(--cor-fundo-transparente); /* Para a imagem */
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.hero .titulo-hero h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* -------------------- SEÇÕES DE INFORMAÇÃO -------------------- */
+.secao-info {
+    padding: 80px 15%; /* Espaçamento lateral e vertical */
+    text-align: center;
+    background-color: var(--cor-texto-claro); /* Fundo padrão para seções de texto simples */
+    color: var(--cor-texto-escuro);
+}
+
+.secao-info h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2em;
+    color: var(--cor-destaque);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.secao-info p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Seções de destaque com paralaxe */
+.secao-info-destaque {
+    padding: 100px 15%; /* Padding maior para estas seções */
+    text-align: center;
+    color: var(--cor-texto-claro); /* Texto claro sobre a imagem */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efeito de paralaxe */
+    position: relative; /* Para o overlay */
+    overflow: hidden; /* Garante que o pseudo-elemento não vaze */
+}
+
+.secao-info-destaque::before { /* Overlay escuro para melhorar a leitura */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-fundo-overlay);
+    z-index: 1;
+}
+
+.secao-info-destaque p {
+    position: relative; /* Para o texto ficar acima do overlay */
+    z-index: 2;
+    font-size: 1.8em; /* Aumentei para ficar mais próximo da imagem */
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Imagens de fundo específicas para as seções de destaque */
+.parallax-bg-1 {
+    background-image: url('../assets/parallax-imagem2.jpg'); /* CORRIGIDO: Certifique-se que o nome do arquivo está correto */
+}
+
+.parallax-bg-2 {
+    background-image: url('../assets/parallax-imagem3.jpg'); /* CORRIGIDO: Certifique-se que o nome do arquivo está correto */
+}
+
+
+/* -------------------- CONTATOS -------------------- */
+.contatos {
+    background-image: url('../assets/parallax-imagem4.png'); /* CORRIGIDO: Usando a imagem como fundo */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 15%;
+    text-align: center;
+    color: var(--cor-texto-claro);
+    position: relative;
+    overflow: hidden; /* Para o overlay */
+}
+
+.contatos::before { /* Overlay escuro para melhorar a leitura */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-fundo-overlay);
+    z-index: 1;
+}
+
+.contatos * {
+    position: relative; /* Todos os filhos acima do overlay */
+    z-index: 2;
+}
+
+.contatos h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2em;
+    color: var(--cor-destaque);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.contatos .mapa-info {
+    display: flex;
+    flex-direction: column; /* Padrão para mobile */
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* Em telas maiores, alinhar mapa e info lado a lado */
+@media (min-width: 769px) {
+    .contatos .mapa-info {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+
+.contatos iframe {
+    width: 100%;
+    max-width: 600px; /* Limite de largura para o mapa */
+    height: 350px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contatos .info {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 2;
+    background-color: var(--cor-fundo-transparente); /* Use a variável */
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 400px; /* Largura máxima para o bloco de info */
+}
+
+.contatos .info p {
+    margin-bottom: 10px;
+}
+
+
+/* -------------------- HORÁRIOS DE FUNCIONAMENTO -------------------- */
+.horarios {
+    background-image: url('../assets/cafeteria.jpg'); /* CORRIGIDO: Usando a imagem como fundo */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 15%;
+    text-align: center;
+    color: var(--cor-texto-claro);
+    position: relative;
+    overflow: hidden; /* Para o overlay */
+}
+
+.horarios::before { /* Overlay escuro para melhorar a leitura */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-fundo-overlay);
+    z-index: 1;
+}
+
+.horarios * {
+    position: relative; /* Todos os filhos acima do overlay */
+    z-index: 2;
+}
+
+.horarios h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2em;
+    color: var(--cor-destaque);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.horarios ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Colunas flexíveis */
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.horarios ul li {
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo semi-transparente para cada item */
+    padding: 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.horarios ul li h3 {
+    font-family: 'Open Sans', sans-serif; /* Usar Open Sans para os dias */
+    font-size: 1.3em;
+    color: var(--cor-texto-claro);
+    margin-bottom: 15px;
+    letter-spacing: normal;
+    text-shadow: none;
+}
+
+.horarios ul li div { /* Divisor */
+    width: 80%;
+    height: 1px;
+    background-color: var(--cor-divisor);
+    margin: 15px 0;
+}
+
+.horarios ul li p {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--cor-texto-claro);
+}
+
+/* -------------------- RODAPÉ -------------------- */
+.rodape {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-claro);
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9em;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rodape p {
+    margin-bottom: 10px;
+}
+
+.rodape a img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    background-color: var(--cor-primaria);
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.rodape a img:hover {
+    transform: translateY(-5px);
+}
+
+/* -------------------- RESPONSIVIDADE -------------------- */
+@media (max-width: 1024px) {
+    .topo {
+        padding: 10px 30px;
+    }
+
+    .topo .logo {
+        height: 45px;
+    }
+
+    .topo .menu a {
+        margin-left: 20px;
+        font-size: 1em;
+    }
+
+    .hero .titulo-hero h1 {
+        font-size: 2.8em;
+    }
+
+    .secao-info h3 {
+        font-size: 1.8em;
+    }
+
+    .secao-info p {
+        font-size: 1em;
+    }
+
+    .secao-info-destaque p {
+        font-size: 1.5em;
+    }
+
+    .contatos h3, .horarios h3 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .topo {
+        flex-direction: column;
+        padding: 10px 20px;
+        align-items: center;
+    }
+
+    .topo .logo {
+        margin-bottom: 10px;
+    }
+
+    .topo .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .topo .menu a {
+        margin: 5px 15px;
+    }
+
+    .hero {
+        height: 60vh;
+        margin-top: 100px; /* Ajuste para o topo maior */
+    }
+
+    .hero .titulo-hero h1 {
+        font-size: 2.2em;
+    }
+
+    .secao-info, .secao-info-destaque {
+        padding: 60px 10%;
+    }
+
+    .secao-info h3 {
+        font-size: 1.6em;
+    }
+
+    .secao-info-destaque p {
+        font-size: 1.3em;
+    }
+
+    .contatos {
+        padding: 60px 10%;
+    }
+
+    .contatos .mapa-info {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contatos iframe {
+        height: 300px;
+    }
+
+    .horarios {
+        padding: 60px 10%;
+    }
+
+    .horarios ul {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+
+    .rodape a img {
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .topo {
+        padding: 10px;
+    }
+
+    .topo .menu a {
+        font-size: 0.9em;
+        margin: 5px 10px;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero .titulo-hero h1 {
+        font-size: 1.8em;
+        line-height: 1.2;
+    }
+
+    .secao-info, .secao-info-destaque {
+        padding: 40px 5%;
+    }
+
+    .secao-info h3 {
+        font-size: 1.4em;
+    }
+
+    .secao-info p {
+        font-size: 0.9em;
+    }
+
+    .secao-info-destaque p {
+        font-size: 1.1em;
+    }
+
+    .contatos, .horarios {
+        padding: 40px 5%;
+    }
+
+    .contatos h3, .horarios h3 {
+        font-size: 1.6em;
+    }
+
+    .contatos .info p {
+        font-size: 1em;
+    }
+
+    .rodape a img {
+        width: 35px;
+        height: 35px;
+        bottom: 15px;
+        right: 10px;
+    }
+}
