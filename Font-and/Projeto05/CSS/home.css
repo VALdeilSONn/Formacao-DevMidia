@@ -46,18 +46,14 @@
 }
 
 .logo {
-    width: 420px;
-    height: 200px;
-    /* Largura fixa para o logo */
-    display: flex;
+    width: 320px;
+    margin: 0 auto;
     align-items: center;
-    /* Centraliza verticalmente */
+    display: flex;
 }
 
-.logo h2 p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.logo article {
+    text-align: start;
     line-height: 1.2;
 }
 
@@ -93,11 +89,11 @@ header.menu nav ul li {
     width: 100%;
     padding: 180px 0px;
     display: flex;
-    background-color: #2f86d6;
+    background-color: rgb(47, 134, 214, 1);
     color: #ffffff;
 }
 
-.banner > div {
+.banner>div {
     width: 1024px;
     margin: 0 auto;
     display: flex;
@@ -133,4 +129,283 @@ header.menu nav ul li {
     height: auto;
 }
 
+/*Anuncio tabela*/
 
+.anuncio {
+    width: 100%;
+    padding: 40px 0;
+    margin: 0 auto;
+    background-color: #233032;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.anuncio>div {
+    width: 1024px;
+    align-items: center;
+}
+
+.anuncio h2 p {
+    width: 600px;
+}
+
+.anuncio button {
+    width: 200px;
+    height: 50px;
+    background-color: #2f86d6;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.anuncio button:hover {
+    background-color: #2f85d66c;
+}
+
+.anuncio a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* ANUNCIO 02*/
+
+.anuncio2 {
+    width: 100%;
+    padding: 40px 0;
+    margin: 0 auto;
+    background-color: #2f86d6;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.anuncio2>div {
+    width: 1024px;
+    align-items: center;
+}
+
+.anuncio2 h2 p {
+    width: 600px;
+}
+
+.anuncio2 button {
+    width: 200px;
+    height: 50px;
+    background-color: #233032;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.anuncio2 button:hover {
+    background-color: #2330327a;
+}
+
+.anuncio2 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* FIM DOS ANUNCIOS */
+
+/* CONFIGURAÇÃO DE INFORME */
+
+.informe {
+    width: 100%;
+    padding: 100px 0;
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.informe h2 {
+    width: 900px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.informe h2 span {
+    color: #2f86d6;
+}
+
+.informe div {
+    width: 1024px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    background-color: #2f85d611;
+    padding: 10px;
+}
+
+.informe h3 p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*FIM DO INFORME*/
+
+/* CONFIGURAÇÃO DO PLANOS */
+
+.planos {
+    width: 100%;
+    padding: 100px 0;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.planos div {
+    width: 1024px;
+    margin: 0 auto;
+
+}
+
+.planos div h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.planos div h2 span {
+    color: #2f86d6;
+}
+
+/*grade na tabela*/
+table {
+    border-collapse: collapse;
+    /* Remove espaços entre bordas das células */
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #ccc;
+    /* Cor e espessura da borda */
+    padding: 10px;
+    text-align: center;
+}
+
+/*grade na tabela*/
+.planos table {
+    width: 100%;
+    margin: 60px auto;
+    box-shadow: #2f86d6 0px 0px 70px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+.planos table th {
+    padding: 10px;
+    color: #000000;
+    font-size: 20px;
+}
+
+.planos table td p {
+    padding: 20px;
+    padding: 10px;
+    color: #6e6e6e;
+    font-size: 17px;
+}
+
+.planos tbody p {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #233032;
+}
+
+.planos tbody ul {
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+.planos tbody ul li {
+    padding: 10px;
+    color: #000000;
+    font-size: 16px;
+}
+.planos tbody ul li.cinza {
+    background-color: #6e6e6e83;
+}
+
+/*FIM DO PLANO*/
+
+/*CONFIGURAÇÃO DO FOOTER*/
+.contato {
+    width: 100%;
+    padding: 100px 0;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+}
+
+.logo-footer {
+    width: 320px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+}
+.logo-footer img {
+    width: 100px;
+    height: 100px;
+    margin-right: 4px;
+}
+.logo-footer article {
+    text-align: start;
+    }
+.logo-footer h2 {
+    font-size: 24px;
+    color: #000000;
+}
+.logo-footer p {
+    font-size: 16px;
+    color: #2189eb;
+    margin-top: 10px;
+}
+
+.contato-footer {
+    width: 900px;
+    margin: 100px auto ;
+    padding: 0px;
+    text-align: center;
+    line-height: 35px;
+    font-weight: 500;
+}
+.contato-footer a {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #2f86d6;
+}
+.contato-footer a:hover {
+    text-decoration: underline;
+    font-size: 21px;
+    color: #233032;
+}
+.nome-developer {
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+    padding: 20px 0;
+}
+.nome-developer span {
+    color: #2f86d6;
+    font-weight: 600;
+}
